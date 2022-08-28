@@ -1,4 +1,2 @@
-# watchstep.github.io
+# Hello, I'm Juii Kim
 
-안녕하세요!
-123
