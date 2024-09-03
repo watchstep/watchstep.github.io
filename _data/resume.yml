@@ -3,14 +3,10 @@ name: Juii Kim
 jobtitle: ML engineer
 about: "• Aspiring ML enginner with continuous learning and creative problem-solving. <br> • Eager to contribute to innovative projects and grow alongside talented professionals."
 contact:
-  - icon: 
-    text: cathy033077@gmail.com
-  - icon: fa-phone
-    # text: +82 10-9774-1600
-  - icon: fa-github
-    link: https://github.com/watchstep
-  - icon: fa-linkedin
-    link: https://github.com/watchstep
+  - name: github
+    url: https://github.com/watchstep
+  - name: linkedin
+    url: https://github.com/watchstep
 skill:
   - items: Consectetur, Adipiscing, Elit
   - items: Sed do, Eiusmod, Tempor, Incididunt

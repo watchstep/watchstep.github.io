@@ -49,23 +49,29 @@ header {
   font-size: 1.2rem;
   margin-top: .8rem;
 }
-#contact {
+/* #contact {
   font-size: 1rem;
   padding-top: 1rem;
-}
+} */
+
 .contact {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 600px; /* Adjust this as needed */
+  padding: 12px 0;
+  margin-bottom: var(--social-icons-bottom-margin)
 }
-.contact-item:nth-child(1) {
-  margin-top: 0;
+
+.contact a {
+  text-decoration: none;
 }
-.contact-item {
-  display: flex;
-  align-items: center;
-  margin-top: .4rem;
+
+.contact a:not(:last-of-type) {
+  margin-inline-end: 12px;
 }
+
+.contact a svg {
+  height: 20px;
+  width: 20px;
+}
+
 section {
   display: flex;
   padding-top: 2.4rem;
@@ -143,14 +149,10 @@ footer {
     text-align: center;
     padding-bottom: 2rem;
   }
-  #contact {
+  /* #contact {
     padding-top: 1rem;
     border-top: .1rem solid #bbbbbb;
-  }
-  .contact-item {
-    padding-top: .2rem;
-    padding-left: .4rem;
-  }
+  } */
   section {
     display: block;
     padding-top: 2rem;
