@@ -1,0 +1,28 @@
+title: watchstep's resume
+name: Juii Kim
+jobtitle: ML engineer
+about: "• Aspiring ML enginner with continuous learning and creative problem-solving. <br> • Eager to contribute to innovative projects and grow alongside talented professionals."
+contact:
+  - icon: 
+    text: cathy033077@gmail.com
+  - icon: fa-phone
+    # text: +82 10-9774-1600
+  - icon: fa-github
+    link: https://github.com/watchstep
+  - icon: fa-linkedin
+    link: https://github.com/watchstep
+skill:
+  - items: Consectetur, Adipiscing, Elit
+  - items: Sed do, Eiusmod, Tempor, Incididunt
+education:
+  - university: Yonsei University
+    duration: 2020.03 - 2025.02
+    location: Seoul, South Korea
+    major: Major in Library and Information Science, Minor in Applied Statistics
+project:
+  - name: Project Name 1
+    description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    contribution: Contributor.
+  - name: Project Name 2
+    description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    contribution: Creator and maintainer.

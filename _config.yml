@@ -1,0 +1,26 @@
+title: "watchstep's resume"
+url: https://watchstep.github.io
+baseurl: /resume
+asset_url: /assets
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .sass-cahce/
+  - .jekyll-cache/
+  - gemfiles/
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - bin/
+  - lib/
+  - "*.gemspec"
+  - "*.gem"
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - fixtures/
