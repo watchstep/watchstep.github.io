@@ -3,22 +3,70 @@ name: Juii Kim
 jobtitle: ML engineer
 about: "• Aspiring ML enginner with continuous learning and creative problem-solving. <br> • Eager to contribute to innovative projects and grow alongside talented professionals."
 contact:
+  - name: email
+    url: mailto:cathy033077@gmail.com
+  - name: kakaotalk
+    url: http://qr.kakao.com/talk/DK50czj1wvhUM5aCbaLNdVOyZik-
   - name: github
     url: https://github.com/watchstep
   - name: linkedin
-    url: https://github.com/watchstep
+    url: https://www.linkedin.com/in/watchstep
 skill:
-  - items: Consectetur, Adipiscing, Elit
-  - items: Sed do, Eiusmod, Tempor, Incididunt
+  - title: Programming Language
+    items: Python, R, Dart
+  - title: ML
+    items: Numpy, Scikit-learn, Pandas, PyTorch, HuggingFace
+  - title: Frontend
+    items: HTML/CSS, Flutter
 education:
   - university: Yonsei University
-    duration: 2020.03 - 2025.02
+    duration: Mar 2020 - Feb 2025
     location: Seoul, South Korea
     major: Major in Library and Information Science, Minor in Applied Statistics
+experience:
+  - title: PoolC
+    url: https://poolc.org/
+    duration: Mar 2021 - Aug 2023
+    about: Yonsei University Programming Club
+    description: • Organized club activities and led a Flutter basics seminar
+  - title: YAI (Yonsei Artificial Intelligence)
+    url: https://y-ai.notion.site/
+    duration: Jul 2022 - Aug 2024
+    about: Yonsei University AI Society
+    description: • 10-13th Cohort Member <br> • Joined NLP Paper and GNN research teams
+  - title: GDSC Yonsei
+    url: https://gdsc-ys.github.io/
+    duration: Sep 2022 - Mar 2023
+    about: Google Developer Student Club
+    description: • Led Flutter development team and participated in ML projects <br> • Participated in the Solution Challenge 2023 and advanced to the Top 10
+  - title: Boostcamp AI Tech 5th
+    duration: Mar 2023 - Aug 2023
+    about: by Naver Connect Foundation
+    description: • Completed the Recommender System Track
 project:
-  - name: Project Name 1
-    description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    contribution: Contributor.
-  - name: Project Name 2
-    description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    contribution: Creator and maintainer.
+  - title: Retrieval-Optimized Sentence/Paragraph Embeddings
+    url: https://github.com/watchstep/rerank
+    duration: Sep 2023 - Nov 2023
+    about: YAI Industry-Academia Collaboration Project with Linq
+    description: "Engaged in a collaborative project between YAI and Linq, investigating the Effective Application of LLaMA2 in Information Retrieval: A Comparative Study with BERT and T5 Models"
+  - title: LLM-based Search Engine (howcan.ai)
+    url: https://github.com/boostcampaitech5/level3_recsys_finalproject-recsys-11
+    duration: Jun 2023 - Jul 2023
+    about: Final project at Boostcamp AI Tech
+    description: Developed an interactive search engine that generates real-time summaries of web documents to deliver query-specific responses to users
+  - title: Movie Recommendation System
+    url: https://github.com/boostcampaitech5/level2_movierecommendation-recsys-11
+    duration: May 2023 - Jul 2023
+    about: Internal Competition at Boostcamp AI Tech
+    description: Participated in a competition to predict users' next movie selections based on the MovieLens dataset
+  - title: "HearSitter: Sound Recognition App for the Hearing Impaired"
+    url: https://github.com/gdsc-ys/hearsitter-flutter
+    duration: Jan 2023 - Mar 2023
+    about: Google Solution Challenge 2023 <b> Top 10 finalist </b>
+    description: Developed a mobile application for sound detection using Flutter framework
+  - title: Analysis of Korean Social Conflicts Using Text Mining Techniques
+    url: https://github.com/LIS3813/LIS3813
+    duration: May 2022 - Jul 2022
+    about: "'Text Information Processing Theory' Course Team Project"
+
+  

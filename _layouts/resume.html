@@ -13,8 +13,9 @@ layout: default
         </div>
         <div id="contact" class="contact">
           {% for item in site.data.resume.contact %}
+          {% assign icon_name = item.name | downcase %}
           <a href="{{ item.url }}">
-            {% include svg.html icon_name=item.name %}
+            {% include svg.html icon_name=icon_name %}
           </a>
           {% endfor %}
         </div>
@@ -22,15 +23,14 @@ layout: default
           {{ site.data.resume.about }}
         </div>
       </header>
-
       <section id="skill">
         <div class="section-title">
           Skill
         </div>
-        <div class="section-content">
-          {% for skill in site.data.resume.skills %}
-          <div class="block">
-            <div class="block-title">
+        <div class="skill-content">
+          {% for skill in site.data.resume.skill %}
+          <div class="skill">
+            <div class="skill-title">
               {{ skill.title }}
             </div>
             <div class="block-content">
@@ -69,11 +69,19 @@ layout: default
         <div class="section-content">
           {% for exp in site.data.resume.experience %}
           <div class="block">
-            <div class="block-title">
+            <div class="block-url-title">
               {{ exp.title }}
+              {% if exp.url %}
+              <div class="url">
+                {% assign icon_name = item.name | downcase %}
+                <a href="{{ exp.url }}">
+                  {% include svg.html icon_name=icon_name %}
+                </a>
+              </div>
+              {% endif %}
             </div>
             <div class="block-subtitle">
-              {{ exp.duration }} | {{ exp.company }}
+              {{ exp.duration }} | {{ exp.about }}
             </div>
             <div class="block-content">
               {{ exp.description }}
@@ -88,13 +96,21 @@ layout: default
           Project
         </div>
         <div class="section-content">
-          {% for project in site.data.resume.projects %}
+          {% for project in site.data.resume.project %}
           <div class="block">
-            <div class="block-title">
-              {{ project.name }}
+            <div class="block-url-title">
+              {{ project.title }}
+              {% if project.url %}
+              <div class="url">
+                {% assign icon_name = item.name | downcase %}
+                <a href="{{ exp.url }}">
+                  {% include svg.html icon_name=icon_name %}
+                </a>
+              </div>
+              {% endif %}
             </div>
             <div class="block-subtitle">
-              {{ project.contribution }}
+              {{ project.duration }} | {{ project.about }}
             </div>
             <div class="block-content">
               {{ project.description }}

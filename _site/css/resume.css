@@ -15,7 +15,7 @@ body {
 }
 a {
   text-decoration: none;
-  /* color: #f0965b; */
+  color: #E85C0D;
 }
 a:hover {
   text-decoration: underline;
@@ -28,50 +28,45 @@ a:hover {
   margin-bottom: 1rem;
 }
 header {
-  display: flex;
   justify-content: space-between;
   border-bottom: .1rem solid #bbbbbb;
-  padding-top: 2.2rem;
-  padding-bottom: 2.2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
 }
 #name-wrapper {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 #fullname {
-  font-size: 2.2rem;
+  font-size: 2.7rem;
   font-weight: bold;
 }
 #about{
   margin-bottom: 10px;
 }
 #jobtitle {
-  font-size: 1.2rem;
-  margin-top: .8rem;
+  font-size: large;
+  margin-top: .1rem;
+  font-weight: 300;
 }
-/* #contact {
-  font-size: 1rem;
-  padding-top: 1rem;
-} */
-
+#about {
+  font-size: medium;
+  font-weight: 300;
+}
 .contact {
   padding: 12px 0;
-  margin-bottom: var(--social-icons-bottom-margin)
+  margin-bottom: var(--contact-bottom-margin)
 }
-
 .contact a {
   text-decoration: none;
 }
-
 .contact a:not(:last-of-type) {
   margin-inline-end: 12px;
 }
-
 .contact a svg {
   height: 20px;
   width: 20px;
 }
-
 section {
   display: flex;
   padding-top: 2.4rem;
@@ -81,9 +76,11 @@ section {
   hyphens: auto;
 }
 .section-title {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  font-weight: 300;
   text-align: left;
   min-width: 10rem;
+  /* color: #686D76; */
 }
 .section-content {
 }
@@ -104,22 +101,52 @@ section {
   margin-bottom: 0;
 }
 .block-title {
-  font-size: 1.2rem;
-  margin-bottom: .4rem;
+  /* display: flex; */
+  font-size: 1.5rem;
+  margin-bottom: .1rem;
   font-weight: bold;
 }
+.block-url-title {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: flex-end;
+  font-size: 1.5rem;
+  margin-bottom: .1rem;
+  font-weight: bold;
+}
+.url {
+  margin-left: 10px;
+}
+.url a {
+  text-decoration: none;
+}
+.url a svg {
+  height: 16px;
+  width: 16px;
+}
+.skill {
+  display: flex; 
+  align-items: center; 
+  margin-bottom: .5rem; 
+}
+.skill-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 1rem;
+}
 .block-subtitle {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #bbbbbb;
+  font-size: 1.1rem;
+  margin-bottom: .8rem;
+  color: #acb0b6;
 }
 .block-content {
-  font-size: 1rem;
+  font-size: medium;
   line-height: 1.5;
 }
 footer {
   color: #bbbbbb;
-  font-size: 1rem;
+  font-size: medium;
+  font-weight: 500;
   min-height: 3rem;
   line-height: 3rem;
   margin-top: 1rem;
