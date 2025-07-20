@@ -1,15 +1,10 @@
 title: "watchstep's resume"
 url: "https://watchstep.github.io"
 baseurl: ""
-asset_url: "/assets"
+asset_url: "assets"
 
-remote_theme: jellykell/jellykell-theme   
-theme: null                               
-
-plugins:
-  - jekyll-remote-theme
-  - jekyll-seo-tag
-  - jekyll-feed
+remote_theme: jellykell/jellykell-theme  
+theme: null  
 
 exclude:
   - README.md
