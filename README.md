@@ -1,4 +1,4 @@
-## Resume
+## Watchstep's Resume 
 
 ### Setup
 1. Install Ruby
