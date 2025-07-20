@@ -3,17 +3,9 @@ url: "https://watchstep.github.io"
 baseurl: ""
 asset_url: "/assets"
 
-title: "watchstep's resume"
-
-# 사이트 기본 설정
-url: "https://watchstep.github.io"   # ✨ https 반드시 포함
-baseurl: ""                          # User Site 는 루트, 빈 값 유지
-asset_url: "/assets"                 # 슬래시로 시작하도록 수정
-
 remote_theme: jellykell/jellykell-theme   
 theme: null                               
 
-# 로컬 개발용 플러그인
 plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
