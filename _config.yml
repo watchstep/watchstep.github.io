@@ -1,6 +1,6 @@
 title: "watchstep's resume"
 url: https://watchstep.github.io
-baseurl: "/resume"
+baseurl: ""
 asset_url: "assets"
 
 exclude:
