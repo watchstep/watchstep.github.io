@@ -18,6 +18,17 @@ skill:
     items: Numpy, Scikit-learn, Pandas, PyTorch, HuggingFace
   - title: Frontend
     items: HTML/CSS, Flutter
+career:
+  - company: JINHAKSA (CATCH)
+    position: AI Engineer
+    url: https://www.linkedin.com/company/catchjob/
+    duration: Jan 2025 - Present
+    description: Working in the AI Team at JINHAKSA, developing AI-powered recruitment solutions including talent evaluation models and optimal candidate-job matching systems for the CATCH platform."
+    highlights:
+      - Designed and built single-agent system for automated company domain data generation
+      - Optimized and evaluated HR talent matching model performance through experimentation with scoring combinations for the Talent Pick service
+      - Refactored existing codebase for improved maintainability and readability
+      - Developed AI-powered services using prompt engineering and closed-model APIs
 education:
   - university: Yonsei University
     duration: Mar 2020 - Feb 2025
