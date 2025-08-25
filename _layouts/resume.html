@@ -48,13 +48,16 @@ layout: default
       {% for job in site.data.resume.career %}
         <div class="block">
           <div class="block-url-title">
-            {{ job.position }} @ {{ job.company }}
+            {{ job.position }} @ 
             {% if job.url %}
+              <a href="{{ job.url }}" target="_blank">{{ job.company }}</a>
               <div class="url">
-                <a href="{{ job.url }}">
+                <a href="{{ job.url }}" target="_blank">
                   {% include svg.html icon_name="link" %}
                 </a>
               </div>
+            {% else %}
+              {{ job.company }}
             {% endif %}
           </div>
           {% if job.duration %}
@@ -64,10 +67,10 @@ layout: default
           {% endif %}
           <div class="block-content">
             {% if job.description %}
-              <p class="job-description">{{ job.description }}</p>
+              <p>{{ job.description }}</p>
             {% endif %}
             {% if job.highlights %}
-              <ul class="highlights">
+              <ul style="margin-top: 0.5rem; padding-left: 1.2rem;">
                 {% for highlight in job.highlights %}
                   <li>{{ highlight }}</li>
                 {% endfor %}
