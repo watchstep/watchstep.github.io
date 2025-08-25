@@ -25,10 +25,10 @@ career:
     duration: Jan 2025 - Present
     description: Working in the AI Team at JINHAKSA, developing AI-powered solutions including talent-job matching systems for the CATCH platform
     highlights:
-      - Designed and built single-agent system for automated company domain data generation
-      - Optimized and evaluated HR talent matching model performance through experimentation with scoring combinations for the Talent Pick service
-      - Refactored existing codebase for improved maintainability and readability
-      - Developed AI-powered services using prompt engineering and closed-model APIs
+      - "• Designed and built single-agent system for automated company domain data generation"
+      - "• Optimized HR talent matching model performance through experimentation with scoring combinations for the Talent Pick service"
+      - "• Refactored codebase improving maintainability and readability"
+      - "• Developed AI-powered services using prompt engineering and closed-model APIs"
 education:
   - university: Yonsei University
     duration: Mar 2020 - Feb 2025
