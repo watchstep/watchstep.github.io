@@ -71,6 +71,7 @@ layout: default
             {% endif %}
             {% if job.highlights %}
               <br>
+              <ul style="margin-top: 0.5rem; padding-left: 1.2rem;"></ul>
               {% for highlight in job.highlights %}
                 {{ highlight }}{% unless forloop.last %}<br>{% endunless %}
               {% endfor %}
