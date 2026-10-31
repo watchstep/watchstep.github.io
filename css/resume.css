@@ -93,7 +93,7 @@ section {
   font-size: 1.5rem;
   font-weight: 300;
   text-align: left;
-  min-width: 10rem;
+  flex: 0 0 10rem;
   /* color: #686D76; */
 }
 .section-content {
@@ -137,16 +137,6 @@ section {
 .url a svg {
   height: 16px;
   width: 16px;
-}
-.skill {
-  display: flex;
-  align-items: center;
-  margin-bottom: .5rem;
-}
-.skill-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-right: 1rem;
 }
 .block-subtitle {
   font-size: 1.1rem;

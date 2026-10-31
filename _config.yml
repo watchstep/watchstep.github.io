@@ -5,6 +5,7 @@ asset_url: "assets"
 
 exclude:
   - README.md
+  - CONTEXT.md
   - Gemfile
   - Gemfile.lock
   - .sass-cache/

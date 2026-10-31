@@ -9,20 +9,11 @@ about:
 contact:
   - name: email
     url: mailto:cathy033077@gmail.com
-  - name: kakaotalk
-    url: http://qr.kakao.com/talk/DK50czj1wvhUM5aCbaLNdVOyZik-
   - name: github
     url: https://github.com/watchstep
   - name: linkedin
     url: https://www.linkedin.com/in/watchstep
-skill:
-  - title: Programming Language
-    items: Python, R, Dart
-  - title: ML
-    items: Numpy, Scikit-learn, Pandas, PyTorch, HuggingFace
-  - title: Frontend
-    items: HTML/CSS, Flutter
-career:
+work_experience:
   - title: AI Engineer
     org: JINHAKSA (CATCH)
     url: https://www.linkedin.com/company/catchjob/
@@ -38,7 +29,7 @@ education:
     duration: Mar 2020 - Feb 2025
     location: Seoul, South Korea
     major: Double Major in Library and Information Science and Applied Statistics
-experience:
+extracurricular_activities:
   - title: PoolC
     url: https://poolc.org/
     duration: Mar 2021 - Aug 2023
@@ -64,7 +55,7 @@ experience:
     about: by Naver Connect Foundation
     highlights:
       - Completed the Recommender System Track
-project:
+projects:
   - title: Retrieval-Optimized Sentence/Paragraph Embeddings
     url: https://github.com/watchstep/rerank
     duration: Sep 2023 - Nov 2023

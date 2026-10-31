@@ -26,37 +26,8 @@ layout: default
     </div>
   </header>
 
-  <section id="skill">
-    <div class="section-title">
-      Skill
-    </div>
-    <div class="skill-content">
-      {% for skill in r.skill %}
-        <div class="skill">
-          <div class="skill-title">
-            {{ skill.title }}
-          </div>
-          <div class="block-content">
-            {{ skill.items }}
-          </div>
-        </div>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section id="career">
-    <div class="section-title">Career</div>
-    <div class="section-content">
-      {% for job in r.career %}
-        {% include entry.html entry=job %}
-      {% endfor %}
-    </div>
-  </section>
-
   <section id="education">
-    <div class="section-title">
-      Education
-    </div>
+    <div class="section-title">Education</div>
     <div class="section-content">
       {% for edu in r.education %}
         <div class="block">
@@ -74,44 +45,30 @@ layout: default
     </div>
   </section>
 
-  <section id="experience">
-    <div class="section-title">
-      Experience
-    </div>
+  <section id="work-experience">
+    <div class="section-title">Experience</div>
     <div class="section-content">
-      {% for exp in r.experience %}
-        {% include entry.html entry=exp %}
+      {% for job in r.work_experience %}
+        {% include entry.html entry=job %}
       {% endfor %}
     </div>
   </section>
 
-  <section id="project">
-    <div class="section-title">
-      Project
-    </div>
+  <section id="projects">
+    <div class="section-title">Projects</div>
     <div class="section-content">
-      {% for project in r.project %}
+      {% for project in r.projects %}
         {% include entry.html entry=project %}
       {% endfor %}
     </div>
   </section>
 
-  <!--
-  <section id="languages">
-    <div class="section-title">
-      Languages
-    </div>
-    <div class="section-content section-flex">
-      {% for language in r.languages %}
-        <div class="block block-square">
-          <div class="block-title">
-            {{ language.name }}
-          </div>
-          <div class="block-content">
-            {{ language.proficiency }}
-          </div>
-        </div>
+  <section id="extracurricular-activities">
+    <div class="section-title">Activities</div>
+    <div class="section-content">
+      {% for activity in r.extracurricular_activities %}
+        {% include entry.html entry=activity %}
       {% endfor %}
     </div>
-  </section> -->
+  </section>
 </div>

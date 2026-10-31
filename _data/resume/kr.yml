@@ -2,7 +2,7 @@
 # en.yml과 같은 구조. 항목 추가 방법은 README.md 참고.
 title: watchstep's resume
 name: 김주의
-jobtitle: AI 엔지니어
+jobtitle: AI Engineer
 about:
   - 끊임없이 배우고 창의적으로 문제를 해결하는 AI 엔지니어를 지향합니다.
   - 혁신적인 프로젝트에 기여하며 뛰어난 동료들과 함께 성장하고 싶습니다.
@@ -15,14 +15,7 @@ contact:
     url: https://github.com/watchstep
   - name: linkedin
     url: https://www.linkedin.com/in/watchstep
-skill:
-  - title: 프로그래밍 언어
-    items: Python, R, Dart
-  - title: ML
-    items: Numpy, Scikit-learn, Pandas, PyTorch, HuggingFace
-  - title: 프론트엔드
-    items: HTML/CSS, Flutter
-career:
+work_experience:
   - title: AI 엔지니어
     org: 진학사 (캐치)
     url: https://www.linkedin.com/company/catchjob/
@@ -38,7 +31,7 @@ education:
     duration: 2020.03 - 2025.02
     location: 서울
     major: 문헌정보학 · 응용통계학 복수전공
-experience:
+extracurricular_activities:
   - title: PoolC
     url: https://poolc.org/
     duration: 2021.03 - 2023.08
@@ -64,7 +57,7 @@ experience:
     about: 네이버 커넥트재단
     highlights:
       - 추천 시스템 트랙 수료
-project:
+projects:
   - title: 검색 최적화 문장/문단 임베딩
     url: https://github.com/watchstep/rerank
     duration: 2023.09 - 2023.11
