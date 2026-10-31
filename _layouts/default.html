@@ -2,7 +2,7 @@
 layout: null
 ---
 <!DOCTYPE html>
-<html>
+<html lang="{% if page.lang == 'kr' %}ko{% else %}en{% endif %}">
   {% include header.html %}
   <body>
   {{ content }}

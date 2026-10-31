@@ -1,7 +1,11 @@
+# English resume -> https://watchstep.site/
+# Same structure as kr.yml. See README.md for how to add an entry.
 title: watchstep's resume
 name: Juii Kim
 jobtitle: AI Engineer
-about: "• Aspiring AI Engineer with continuous learning and creative problem-solving. <br> • Eager to contribute to innovative projects and grow alongside talented professionals."
+about:
+  - Aspiring AI Engineer with continuous learning and creative problem-solving.
+  - Eager to contribute to innovative projects and grow alongside talented professionals.
 contact:
   - name: email
     url: mailto:cathy033077@gmail.com
@@ -19,16 +23,16 @@ skill:
   - title: Frontend
     items: HTML/CSS, Flutter
 career:
-  - company: JINHAKSA (CATCH)
-    position: AI Engineer
+  - title: AI Engineer
+    org: JINHAKSA (CATCH)
     url: https://www.linkedin.com/company/catchjob/
     duration: Jan 2025 - Present
     description: Working in the AI Team at JINHAKSA, developing AI-powered solutions including talent-job matching systems for the CATCH platform
     highlights:
-      - "• Designed and built single-agent system for automated company domain data generation"
-      - "• Optimized HR talent matching model performance through experimentation with scoring combinations for the Talent Pick service"
-      - "• Refactored codebase improving maintainability and readability"
-      - "• Developed AI-powered services using prompt engineering and closed-model APIs"
+      - Designed and built single-agent system for automated company domain data generation
+      - Optimized HR talent matching model performance through experimentation with scoring combinations for the Talent Pick service
+      - Refactored codebase improving maintainability and readability
+      - Developed AI-powered services using prompt engineering and closed-model APIs
 education:
   - university: Yonsei University
     duration: Mar 2020 - Feb 2025
@@ -39,21 +43,27 @@ experience:
     url: https://poolc.org/
     duration: Mar 2021 - Aug 2023
     about: Yonsei University Programming Club
-    description: • Organized club activities and led a Flutter basics seminar
+    highlights:
+      - Organized club activities and led a Flutter basics seminar
   - title: YAI (Yonsei Artificial Intelligence)
     url: https://y-ai.notion.site/
     duration: Jul 2022 - Aug 2024
     about: Yonsei University AI Society
-    description: • 10-13th Cohort Member <br> • Joined NLP Paper and GNN research teams
+    highlights:
+      - 10-13th Cohort Member
+      - Joined NLP Paper and GNN research teams
   - title: GDSC Yonsei
     url: https://gdsc-ys.github.io/
     duration: Sep 2022 - Mar 2023
     about: Google Developer Student Club
-    description: • Led Flutter development team and participated in ML projects <br> • Participated in the Solution Challenge 2023 and advanced to the Top 10
+    highlights:
+      - Led Flutter development team and participated in ML projects
+      - Participated in the Solution Challenge 2023 and advanced to the Top 10
   - title: Boostcamp AI Tech 5th
     duration: Mar 2023 - Aug 2023
     about: by Naver Connect Foundation
-    description: • Completed the Recommender System Track
+    highlights:
+      - Completed the Recommender System Track
 project:
   - title: Retrieval-Optimized Sentence/Paragraph Embeddings
     url: https://github.com/watchstep/rerank
@@ -73,11 +83,9 @@ project:
   - title: "HearSitter: Sound Recognition App for the Hearing Impaired"
     url: https://github.com/gdsc-ys/hearsitter-flutter
     duration: Jan 2023 - Mar 2023
-    about: Google Solution Challenge 2023 <b> Top 10 finalist </b>
+    about: Google Solution Challenge 2023 <b>Top 10 finalist</b>
     description: Developed a mobile application for sound detection using Flutter framework
   - title: Analysis of Korean Social Conflicts Using Text Mining Techniques
     url: https://github.com/LIS3813/LIS3813
     duration: May 2022 - Jul 2022
     about: "'Text Information Processing Theory' Course Team Project"
-
-  

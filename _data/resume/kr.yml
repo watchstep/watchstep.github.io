@@ -1,0 +1,91 @@
+# 국문 이력서 -> https://watchstep.site/kr
+# en.yml과 같은 구조. 항목 추가 방법은 README.md 참고.
+title: watchstep's resume
+name: 김주의
+jobtitle: AI 엔지니어
+about:
+  - 끊임없이 배우고 창의적으로 문제를 해결하는 AI 엔지니어를 지향합니다.
+  - 혁신적인 프로젝트에 기여하며 뛰어난 동료들과 함께 성장하고 싶습니다.
+contact:
+  - name: email
+    url: mailto:cathy033077@gmail.com
+  - name: kakaotalk
+    url: http://qr.kakao.com/talk/DK50czj1wvhUM5aCbaLNdVOyZik-
+  - name: github
+    url: https://github.com/watchstep
+  - name: linkedin
+    url: https://www.linkedin.com/in/watchstep
+skill:
+  - title: 프로그래밍 언어
+    items: Python, R, Dart
+  - title: ML
+    items: Numpy, Scikit-learn, Pandas, PyTorch, HuggingFace
+  - title: 프론트엔드
+    items: HTML/CSS, Flutter
+career:
+  - title: AI 엔지니어
+    org: 진학사 (캐치)
+    url: https://www.linkedin.com/company/catchjob/
+    duration: 2025.01 - 현재
+    description: 진학사 AI팀에서 CATCH 플랫폼의 인재-공고 매칭 시스템 등 AI 기반 솔루션을 개발하고 있습니다.
+    highlights:
+      - 기업 도메인 데이터 자동 생성을 위한 싱글 에이전트 시스템 설계 및 구축
+      - Talent Pick 서비스의 스코어링 조합 실험을 통해 HR 인재 매칭 모델 성능 개선
+      - 코드베이스 리팩토링으로 유지보수성과 가독성 향상
+      - 프롬프트 엔지니어링과 클로즈드 모델 API를 활용한 AI 서비스 개발
+education:
+  - university: 연세대학교
+    duration: 2020.03 - 2025.02
+    location: 서울
+    major: 문헌정보학 · 응용통계학 복수전공
+experience:
+  - title: PoolC
+    url: https://poolc.org/
+    duration: 2021.03 - 2023.08
+    about: 연세대학교 프로그래밍 동아리
+    highlights:
+      - 동아리 활동 운영 및 Flutter 기초 세미나 진행
+  - title: YAI (Yonsei Artificial Intelligence)
+    url: https://y-ai.notion.site/
+    duration: 2022.07 - 2024.08
+    about: 연세대학교 인공지능 학회
+    highlights:
+      - 10-13기 활동
+      - NLP 논문 및 GNN 연구팀 참여
+  - title: GDSC Yonsei
+    url: https://gdsc-ys.github.io/
+    duration: 2022.09 - 2023.03
+    about: Google Developer Student Club
+    highlights:
+      - Flutter 개발팀 리드 및 ML 프로젝트 참여
+      - Solution Challenge 2023 참가, Top 10 진출
+  - title: 부스트캠프 AI Tech 5기
+    duration: 2023.03 - 2023.08
+    about: 네이버 커넥트재단
+    highlights:
+      - 추천 시스템 트랙 수료
+project:
+  - title: 검색 최적화 문장/문단 임베딩
+    url: https://github.com/watchstep/rerank
+    duration: 2023.09 - 2023.11
+    about: YAI × Linq 산학협력 프로젝트
+    description: YAI와 Linq의 산학협력 프로젝트로, 정보 검색에서 LLaMA2의 효과적인 활용 방안을 BERT·T5 모델과 비교 연구
+  - title: LLM 기반 검색 엔진 (howcan.ai)
+    url: https://github.com/boostcampaitech5/level3_recsys_finalproject-recsys-11
+    duration: 2023.06 - 2023.07
+    about: 부스트캠프 AI Tech 최종 프로젝트
+    description: 웹 문서를 실시간으로 요약해 질의에 맞는 답변을 제공하는 대화형 검색 엔진 개발
+  - title: 영화 추천 시스템
+    url: https://github.com/boostcampaitech5/level2_movierecommendation-recsys-11
+    duration: 2023.05 - 2023.07
+    about: 부스트캠프 AI Tech 내부 대회
+    description: MovieLens 데이터셋을 기반으로 사용자가 다음에 볼 영화를 예측하는 대회 참가
+  - title: "HearSitter: 청각장애인을 위한 소리 인식 앱"
+    url: https://github.com/gdsc-ys/hearsitter-flutter
+    duration: 2023.01 - 2023.03
+    about: Google Solution Challenge 2023 <b>Top 10 선정</b>
+    description: Flutter로 소리 감지 모바일 애플리케이션 개발
+  - title: 텍스트 마이닝을 활용한 한국 사회 갈등 분석
+    url: https://github.com/LIS3813/LIS3813
+    duration: 2022.05 - 2022.07
+    about: "'텍스트정보처리론' 수업 팀 프로젝트"

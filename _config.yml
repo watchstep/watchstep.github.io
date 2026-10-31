@@ -1,5 +1,5 @@
 title: "watchstep's resume"
-url: "https://watchstep.github.io"
+url: "https://watchstep.site"
 baseurl: ""
 asset_url: "assets"  
 
@@ -7,7 +7,7 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-  - .sass-cahce/
+  - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
   - node_modules/

@@ -1,0 +1,37 @@
+{% assign e = include.entry %}
+<div class="block">
+  <div class="block-url-title">
+    <span>
+      {{ e.title }}
+      {% if e.org %}
+        @ {% if e.url %}<a href="{{ e.url }}" target="_blank">{{ e.org }}</a>{% else %}{{ e.org }}{% endif %}
+      {% endif %}
+    </span>
+    {% if e.url %}
+      <div class="url">
+        <a href="{{ e.url }}" target="_blank">
+          {% include svg.html icon_name="link" %}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+  {% if e.duration or e.about %}
+    <div class="block-subtitle">
+      {{ e.duration }}{% if e.duration and e.about %} | {% endif %}{{ e.about }}
+    </div>
+  {% endif %}
+  {% if e.description or e.highlights %}
+    <div class="block-content">
+      {% if e.description %}
+        <div>{{ e.description }}</div>
+      {% endif %}
+      {% if e.highlights %}
+        <ul class="highlights">
+          {% for highlight in e.highlights %}
+            <li>{{ highlight }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>

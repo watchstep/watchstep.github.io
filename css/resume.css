@@ -1,3 +1,10 @@
+:root {
+  --accent: #FF0052;
+  --text: #2e2e2e;
+  --muted: #acb0b6;
+  --line: #bbbbbb;
+  --bg: #ffffff;
+}
 html {
   width: 100%;
   font-size: 14px;
@@ -10,12 +17,20 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 1rem;
   margin: 0;
-  color: #2e2e2e;
-  background-color: #ffffff;
+  color: var(--text);
+  background-color: var(--bg);
+}
+html[lang="ko"] body {
+  font-family: "Noto Sans KR", sans-serif;
+  word-break: keep-all;
+}
+html[lang="ko"] .section-title,
+html[lang="ko"] footer {
+  font-family: "Literata", serif;
 }
 a {
   text-decoration: none;
-  color: #E85C0D;
+  color: var(--accent);
 }
 a:hover {
   text-decoration: underline;
@@ -29,7 +44,7 @@ a:hover {
 }
 header {
   justify-content: space-between;
-  border-bottom: .1rem solid #bbbbbb;
+  border-bottom: .1rem solid var(--line);
   padding-top: 2.5rem;
   padding-bottom: 1rem;
 }
@@ -72,8 +87,7 @@ section {
   padding-top: 2.4rem;
   padding-bottom: 2.4rem;
   padding-left: .2rem;
-  border-bottom: .1rem solid #bbbbbb;
-  hyphens: auto;
+  border-bottom: .1rem solid var(--line);
 }
 .section-title {
   font-size: 1.5rem;
@@ -125,9 +139,9 @@ section {
   width: 16px;
 }
 .skill {
-  display: flex; 
-  align-items: center; 
-  margin-bottom: .5rem; 
+  display: flex;
+  align-items: center;
+  margin-bottom: .5rem;
 }
 .skill-title {
   font-size: 1.2rem;
@@ -137,14 +151,25 @@ section {
 .block-subtitle {
   font-size: 1.1rem;
   margin-bottom: .8rem;
-  color: #acb0b6;
+  color: var(--muted);
 }
 .block-content {
   font-size: medium;
   line-height: 1.5;
 }
+.highlights {
+  list-style: none;
+  margin: 1em 0 0;
+  padding: 0;
+}
+.highlights:first-child {
+  margin-top: 0;
+}
+.highlights li::before {
+  content: "• ";
+}
 footer {
-  color: #bbbbbb;
+  color: var(--line);
   font-size: medium;
   font-weight: 500;
   min-height: 3rem;
@@ -155,6 +180,10 @@ footer {
 @media print {
   html {
     font-size: 12px;
+  }
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
   .print {
     display: none;
