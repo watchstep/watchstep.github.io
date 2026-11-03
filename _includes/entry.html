@@ -23,12 +23,31 @@
   {% if e.description or e.highlights %}
     <div class="block-content">
       {% if e.description %}
-        <div>{{ e.description }}</div>
+        <div>
+          {{ e.description }}
+          {% if e.description_url %}
+            <a class="description-url" href="{{ e.description_url }}" target="_blank" rel="noopener noreferrer"
+               aria-label="{{ e.title }} 관련 링크" title="{{ e.title }} 관련 링크">
+              {% include svg.html icon_name="link" %}
+            </a>
+          {% endif %}
+        </div>
       {% endif %}
       {% if e.highlights %}
         <ul class="highlights">
           {% for highlight in e.highlights %}
-            <li>{{ highlight }}</li>
+            <li{% if highlight.title %} class="highlight-detailed"{% endif %}>
+              <div class="highlight-body">
+                {% if highlight.title %}
+                  <strong class="highlight-title">{{ highlight.title }}</strong>
+                  {% if highlight.description %}
+                    <div class="highlight-description">{{ highlight.description }}</div>
+                  {% endif %}
+                {% else %}
+                  {{ highlight }}
+                {% endif %}
+              </div>
+            </li>
           {% endfor %}
         </ul>
       {% endif %}

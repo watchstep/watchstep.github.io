@@ -4,8 +4,8 @@ title: watchstep's resume
 name: 김주의
 jobtitle: AI Engineer
 about:
-  - 끊임없이 배우고 창의적으로 문제를 해결하는 AI 엔지니어를 지향합니다.
-  - 혁신적인 프로젝트에 기여하며 뛰어난 동료들과 함께 성장하고 싶습니다.
+  - 현실 문제를 AI 기술 문제로 구조화하고, 실제 서비스 상황에 맞춰 구현하는 일에 흥미를 키워왔습니다.
+  - LLM 애플리케이션과 AI Agent 워크플로우를 설계·개발하며, 데이터 구조화, 프롬프트 설계 및 RAG 구현 경험을 쌓았습니다.
 contact:
   - name: email
     url: mailto:cathy033077@gmail.com
@@ -13,72 +13,122 @@ contact:
     url: http://qr.kakao.com/talk/DK50czj1wvhUM5aCbaLNdVOyZik-
   - name: github
     url: https://github.com/watchstep
+  - name: blog
+    label: Blog
+    url: https://blog.watchstep.site/
   - name: linkedin
     url: https://www.linkedin.com/in/watchstep
 work_experience:
-  - title: AI 엔지니어
-    org: 진학사 (캐치)
-    url: https://www.linkedin.com/company/catchjob/
-    duration: 2025.01 - 현재
-    description: 진학사 AI팀에서 CATCH 플랫폼의 인재-공고 매칭 시스템 등 AI 기반 솔루션을 개발하고 있습니다.
+  - title: 연세대학교 MLAI 연구실
+    duration: 2026.07 - 현재
+    about: 연세대학교 산학협력단 · 연구직원
+    description: >-
+      한국 인공지능안전연구소(AISI)의 ‘의료 분야 AI 위험 메커니즘 분석 및 시나리오 기반 리스크 모델링’ 연구과제 참여
+    description_url: https://github.com/MLAI-Yonsei/MARQ
     highlights:
-      - 기업 도메인 데이터 자동 생성을 위한 싱글 에이전트 시스템 설계 및 구축
-      - Talent Pick 서비스의 스코어링 조합 실험을 통해 HR 인재 매칭 모델 성능 개선
-      - 코드베이스 리팩토링으로 유지보수성과 가독성 향상
-      - 프롬프트 엔지니어링과 클로즈드 모델 API를 활용한 AI 서비스 개발
+      - 의료 AI의 정적 모델 성능만으로는 실제 임상 환경에서 발생하는 위해를 평가하기 어렵다는 문제를 해결하기 위해, 질환·의료 목적·사용자·중증도·AI 운영 체계·위험 경로의 6개 요소를 바탕으로 위험 시나리오를 생성하고, 시나리오 기반 시뮬레이션을 통해 정량적 위험을 평가하는 연구 수행.
+      - 근거 기반 의료 AI 위험 시나리오를 생성·검증부터 시뮬레이션 모델 생성·실행까지 이어지는 end-to-end 파이프라인을 Agent Skills로 설계 및 구현.
+  - title: 명일연세내과의원
+    duration: 2026.04 - 2026.06
+    about: 외주 개발
+    description: 환자의 의료기록을 기반으로 질의응답하는 카카오톡 AI 챗봇 PoC 개발
+    highlights:
+    - 환자가 자신의 의료기록에 대해 질의응답할 수 있는 LLM 기반 QA 서비스의 요구사항 정의부터 구조 설계, 구현 및 배포까지 담당. FastAPI, Firestore, Google Cloud Run을 활용해 사용자 본인 인증, 파일 업로드, 관리자 대시보드 구현.
+    - 초기 Gemini File Search 기반 chunk-level RAG 구조를 문서 메타데이터를 활용해 질문과 관련된 의료문서를 선택하고, Gemini Files API로 원본 문서 전체를 참조해 답변을 생성하는 구조로 변경. 카카오톡 환경에서 답변의 가독성을 높이기 위해 프롬프트 개선.
+  - title: 진학사
+    duration: 2025.01 - 2025.12
+    about: AI팀 · AI Engineer
+    description: 진학사 채용 플랫폼 CATCH와 관련된 AI 서비스 기획 및 개발.
+    highlights:
+      - title: >-
+          AI 다이렉트 소싱 서비스 '<a href="https://apply.catch.co.kr/main/ProductInfo/poolPick"
+          target="_blank" rel="noopener noreferrer">인재Pick</a>'의 추천 랭킹 로직 고도화
+        description: >-
+          직무,산업 도메인, 연차 적합도 점수 간 스케일 차이로 특정 점수가 편중되는 문제를 파악하고,
+          스케일링 방식과 가중치 조합을 실험해 랭킹 로직 리팩토링.
+      - title: 기업 사업영역과 영역별 경쟁사 분석 LLM 파이프라인 설계 및 구현 / 대규모 데이터 생성
+        description: >-
+          기업이 실제 영위하는 여러 사업영역과 영역별 경쟁사를 분석하기 위해 재무, 고객, 기술 관점의
+          전문가 역할을 LLM에 부여하고, Gemini Grounding 기반으로 웹 정보를 수집해 사업 영역을 분석한
+          결과를 검증 및 통합하는 파이프라인을 설계 및 구현.<br> Google Cloud Platform 기반 실시간 API 사용량
+          모니터링 및 Teams 처리 현황 자동 알림을 통해 약 1.3만 개 기업 데이터 자동 생성.
+      - title: 벤치마크 데이터셋 구축 및 임베딩 모델 평가
+        description: >-
+          한국어-영어 코드믹싱 환경에서의 상용 임베딩 모델의 성능을 비교하기 위해
+          <a href="https://huggingface.co/datasets/mteb/KLUE-STS" target="_blank"
+          rel="noopener noreferrer">KLUE-STS</a> 기반
+          한국어-영어 코드믹싱 평가 데이터셋을 구축하고 후보 모델을 평가해 실서비스 적용을 위한 후보 모델 제안.
 education:
   - university: 연세대학교
     duration: 2020.03 - 2025.02
-    location: 서울
-    major: 문헌정보학 · 응용통계학 복수전공
+    location: 학사 졸업
+    major: 문헌정보학·응용통계학 복수전공
+    gpa: 3.92 / 4.3
 extracurricular_activities:
-  - title: PoolC
-    url: https://poolc.org/
-    duration: 2021.03 - 2023.08
-    about: 연세대학교 프로그래밍 동아리
-    highlights:
-      - 동아리 활동 운영 및 Flutter 기초 세미나 진행
   - title: YAI (Yonsei Artificial Intelligence)
     url: https://y-ai.notion.site/
     duration: 2022.07 - 2024.08
-    about: 연세대학교 인공지능 학회
+    about: 연세대학교 공과대학 인공지능 학회
     highlights:
-      - 10-13기 활동
-      - NLP 논문 및 GNN 연구팀 참여
+      - 10-13기 학회원으로, AI 논문를 지속적으로 리뷰하고 11기 대외팀으로 학회 블로그 관리.
+      - Linq 산학협력 프로젝트에 참여해 LLM Reranking을 주제로, BM25 모델 기반 1st-stage retrieval과 LLaMA2 기반 2nd-stage reranking 실험 수행.
+      - 학회 내부 콘테스트인 YAICON 2기에서 Singing Voice Conversion (SVC)을 주제로, <a href="https://github.com/YIEys/model" target="_blank" rel="noopener noreferrer">Diff-SVC 모델</a>을 파인튜닝해 노래의 음성을 팀원의 음성으로 변환하는 프로젝트을 수행해 3등 수상.
+  - title: 부스트캠프 AI Tech 5기
+    duration: 2023.03 - 2023.08
+    about: 네이버 커넥트재단
+    highlights:
+      - AI 엔지니어 양성을 위한 실무 중심 교육과정을 이수해 AI 기초와 PyTorch 기반 모델링을 학습.
+      - 추천 시스템(RecSys)트랙으로, 내부 경진대회에서 사용자·아이템 상호작용 데이터 전처리, 추천 모델 학습 및 성능 개선 실험 수행.
+  - title: PoolC
+    url: https://poolc.org/
+    duration: 2021.03 - 2023.08
+    about: 연세대학교 공과대학 프로그래밍 동아리
+    highlights:
+      - 22년 1학기에 Flutter 기초 세미나를 주관해 기본 개념 설명 및 애플리케이션 개발 실습 진행.
+      - 23년 1학기에 기획부장으로서 동아리 행사 기획 및 운영.
   - title: GDSC Yonsei
     url: https://gdsc-ys.github.io/
     duration: 2022.09 - 2023.03
     about: Google Developer Student Club
     highlights:
-      - Flutter 개발팀 리드 및 ML 프로젝트 참여
-      - Solution Challenge 2023 참가, Top 10 진출
-  - title: 부스트캠프 AI Tech 5기
-    duration: 2023.03 - 2023.08
-    about: 네이버 커넥트재단
-    highlights:
-      - 추천 시스템 트랙 수료
+      - 1기 창립멤버로 신입 회원 모집에 참여하고, Flutter 파트장 및 ML 스터디원으로 활동.
 projects:
-  - title: 검색 최적화 문장/문단 임베딩
-    url: https://github.com/watchstep/rerank
-    duration: 2023.09 - 2023.11
-    about: YAI × Linq 산학협력 프로젝트
-    description: YAI와 Linq의 산학협력 프로젝트로, 정보 검색에서 LLaMA2의 효과적인 활용 방안을 BERT·T5 모델과 비교 연구
-  - title: LLM 기반 검색 엔진 (howcan.ai)
+  - title: 웹 검색 기반 LLM 검색엔진 howcan.ai 개발
     url: https://github.com/boostcampaitech5/level3_recsys_finalproject-recsys-11
     duration: 2023.06 - 2023.07
-    about: 부스트캠프 AI Tech 최종 프로젝트
-    description: 웹 문서를 실시간으로 요약해 질의에 맞는 답변을 제공하는 대화형 검색 엔진 개발
-  - title: 영화 추천 시스템
-    url: https://github.com/boostcampaitech5/level2_movierecommendation-recsys-11
-    duration: 2023.05 - 2023.07
-    about: 부스트캠프 AI Tech 내부 대회
-    description: MovieLens 데이터셋을 기반으로 사용자가 다음에 볼 영화를 예측하는 대회 참가
-  - title: "HearSitter: 청각장애인을 위한 소리 인식 앱"
+    about: 부스트캠프 AI Tech 최종 팀 프로젝트
+    description: 당시 ChatGPT의 최신 정보 미반영과 할루시네이션 문제를 보완하기 위해, 실시간 웹 검색 결과를 활용해 답변을 생성하는 대화형 검색엔진 개발.
+    highlights:
+      - Google Search API로 사용자 질문과 관련된 상위 웹 검색결과를 수집하고, arc90 Readability 기반으로 웹페이지 본문을 추출한 뒤 PolyGlot-ko 모델을 활용해 핵심 정보를 요약.
+        요약한 결과를 프롬프트에 제공해 웹 정보에 근거한 답변을 생성하도록 구현.
+      - 사용자 검색 의도를 20개 카테고리로 정의하고, 약 5.8만 개 데이터로 KLUE/RoBERTa 모델을 PyTorch Lightning으로 파인튜닝해 사용자의 의도에 맞는 답변 생성과 연관 검색어 제시에 활용.
+  - title: 청각장애인을 위한 ML 기반 소리 인식 애플리케이션 HearSitter 개발
     url: https://github.com/gdsc-ys/hearsitter-flutter
     duration: 2023.01 - 2023.03
-    about: Google Solution Challenge 2023 <b>Top 10 선정</b>
-    description: Flutter로 소리 감지 모바일 애플리케이션 개발
-  - title: 텍스트 마이닝을 활용한 한국 사회 갈등 분석
+    about: >-
+      <a href="https://developers.googleblog.com/ko/meet-the-students-using-google-technologies-to-address-the-uns-sustainability-goals-around-the-globe/"
+      target="_blank" rel="noopener noreferrer">Google Solution Challenge 2023 Global Top 10 Finalist</a>
+    description: Flutter를 활용해 실시간으로 아기 울음이나 유리 깨지는 소리 등을 데시벨과 함께 인식해 알림을 전송하는 애플리케이션 개발.
+  - title: Movie Recommendation
+    url: https://github.com/boostcampaitech5/level2_movierecommendation-recsys-11
+    duration: 2023.05 - 2023.07
+    about: 부스트캠프 AI Tech 내부 경진대회
+    description: MovieLens 데이터셋을 기반으로 사용자가 다음에 볼 영화를 예측하는 경진대회.
+    highlights:
+      - RecVAE 모델를 PyTorch 기반으로 모델링하고, Weights & Biases를 활용해 하이퍼파라미터 튜닝하며 실험 결과를 기록해 성능 개선.
+      - 베이스라인 대비 Recall@10 0.0884에서 0.1514로 약 70% 성능 향상.<br> 내부 경진대회 Public 7등·Private 5등.
+  - title: 반도체 제품 이상 여부 판별 프로젝트
+    url: https://github.com/watchstep/YAIMERS
+    duration: 2024.07 - 2024.08
+    about: LG Aimers 5기 온라인 해커톤
+    highlights:
+      - 정상 제품 약 1.7만 건 대비 이상 제품이 수백 건에 불과한 클래스 불균형 문제를 완화하기 위해, RandomOverSampler, ADASYN 등 샘플링 기법을 비교 및 데이터 전처리.
+      - CatBoost, LightGBM 모델를 활용하고, Optuna로 하이퍼파라미터를 탐색하며 F1 Score를 기준으로 성능 비교.
+  - title: 텍스트마이닝 기법을 활용한 한국 사회 갈등 양상 분석
     url: https://github.com/LIS3813/LIS3813
     duration: 2022.05 - 2022.07
-    about: "'텍스트정보처리론' 수업 팀 프로젝트"
+    about: "'텍스트정보처리론' 강의 팀 프로젝트"
+    description: 대학생 온라인 커뮤니티 '에브리타임' 게시글을 분석해 현재 대학생들이 생각하는 주요 갈등 양상을 파악하는 프로젝트.
+    highlights:
+      - Selenium으로 2021년 1분기부터 2022년 2분기까지 6개 분기의 게시글을 크롤링 및 전처리. <br> <a href="https://github.com/smilegate-ai/korean_unsmile_dataset" target="_blank" rel="noopener noreferrer">Smilegate Unsmile 데이터셋</a>를 활용해 혐오 태그 부여.
+      - LDA 토픽 모델링을 활용해 코로나19, 성소수자, 남녀 갈등, 지역 감정 등 반복적으로 나타나는 갈등 주제를 도출하고, WordCloud를 통해 시각화. 

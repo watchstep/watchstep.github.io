@@ -14,14 +14,14 @@ layout: default
     </div>
     <div id="contact" class="contact">
       {% for item in r.contact %}
-        <a href="{{ item.url }}">
+        <a href="{{ item.url }}"{% if item.label %} aria-label="{{ item.label }}" title="{{ item.label }}"{% endif %}>
           {% include svg.html icon_name=item.name %}
         </a>
       {% endfor %}
     </div>
     <div id="about">
       {% for line in r.about %}
-        • {{ line }}{% unless forloop.last %}<br>{% endunless %}
+        <span class="about-bullet">•</span>{{ line }}{% unless forloop.last %}<br>{% endunless %}
       {% endfor %}
     </div>
   </header>
@@ -39,6 +39,10 @@ layout: default
           </div>
           <div class="block-content">
             {{ edu.major }}
+            {% if edu.gpa %}
+              <br>
+              {% if page.lang == "kr" %}학점{% else %}GPA{% endif %}: {{ edu.gpa }}
+            {% endif %}
           </div>
         </div>
       {% endfor %}

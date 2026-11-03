@@ -73,11 +73,15 @@ about:
 contact:
   - name: email
     url: mailto:example@example.com
+  - name: blog
+    label: Blog
+    url: https://example.com/blog
   - name: github
     url: https://github.com/example
 ```
 
 `contact.name` must match an icon name in `_includes/svg.html`.
+The optional `contact.label` is used as the icon's accessible label and hover title.
 
 ### Education
 
@@ -87,9 +91,10 @@ education:
     duration: Mar 2020 - Feb 2025
     location: Seoul, South Korea
     major: Double Major in Library and Information Science and Applied Statistics
+    gpa: 3.92 / 4.3
 ```
 
-Education entries use `university`, `duration`, `location`, and `major`.
+Education entries use `university`, `duration`, `location`, and `major`. The optional `gpa` field is displayed below the major.
 
 ### Experience, projects, and activities
 
@@ -109,9 +114,13 @@ work_experience:
     duration: Jan 2025 - Present
     about: Optional subtitle
     description: Optional description
+    description_url: https://example.com/details
     highlights:
       - First achievement
-      - Second achievement
+      - title: Detailed achievement title
+        description: >-
+          A longer explanation displayed below the bold title. Existing string
+          highlights and structured highlights can be used together.
 ```
 
 | Field | Required | Description |
@@ -122,9 +131,10 @@ work_experience:
 | `url` | No | External link |
 | `about` | No | Subtitle shown beside the date range |
 | `description` | No | Summary |
-| `highlights` | No | List of details or achievements |
+| `description_url` | No | Link icon displayed beside the description |
+| `highlights` | No | List of string highlights or `title`/`description` objects |
 
-Entries appear in YAML order. Quote strings that contain a colon. Trusted HTML such as `<b>text</b>` is rendered as HTML.
+Entries appear in YAML order. Quote strings that contain a colon. Trusted HTML such as `<b>text</b>` is rendered as HTML. Links added with `<a href="https://example.com">text</a>` inside descriptions or highlights automatically use the accent-colored underline style.
 
 ---
 

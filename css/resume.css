@@ -35,6 +35,35 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.block-content a,
+.block-subtitle a {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: .15em;
+}
+.block-content a {
+  color: inherit;
+}
+.block-subtitle a {
+  color: var(--accent);
+}
+.block-content a:hover,
+.block-subtitle a:hover {
+  text-decoration-color: var(--accent);
+}
+.block-content .description-url,
+.block-content .description-url:hover {
+  display: inline-flex;
+  align-items: center;
+  margin-inline-start: .25rem;
+  color: var(--accent);
+  text-decoration: none;
+  vertical-align: -.15em;
+}
+.description-url svg {
+  width: 1em;
+  height: 1em;
+}
 .container {
   max-width: 48rem;
   margin-left: auto;
@@ -64,9 +93,16 @@ header {
   margin-top: .1rem;
   font-weight: 300;
 }
+html[lang="ko"] #jobtitle {
+  /* Align the Latin title with the Korean name's visible glyph edge. */
+  margin-inline-start: .1rem;
+}
 #about {
   font-size: medium;
   font-weight: 300;
+}
+.about-bullet {
+  margin-inline-end: .4rem;
 }
 .contact {
   padding: 12px 0;
@@ -74,6 +110,9 @@ header {
 }
 .contact a {
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
 }
 .contact a:not(:last-of-type) {
   margin-inline-end: 12px;
@@ -155,8 +194,30 @@ section {
 .highlights:first-child {
   margin-top: 0;
 }
+.highlights li {
+  display: flex;
+  align-items: flex-start;
+}
 .highlights li::before {
-  content: "• ";
+  content: "•";
+  flex: 0 0 auto;
+  margin-inline-end: .4rem;
+}
+.highlight-body {
+  min-width: 0;
+}
+.highlight-title {
+  display: block;
+  font-weight: 700;
+}
+.highlight-description {
+  margin-top: .2rem;
+}
+.highlight-detailed {
+  margin-bottom: .8rem;
+}
+.highlight-detailed:last-child {
+  margin-bottom: 0;
 }
 footer {
   color: var(--line);
