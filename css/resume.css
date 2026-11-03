@@ -55,14 +55,19 @@ a:hover {
 .block-content .description-url:hover {
   display: inline-flex;
   align-items: center;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
   margin-inline-start: .25rem;
   color: var(--accent);
+  line-height: 0;
   text-decoration: none;
   vertical-align: -.15em;
 }
 .description-url svg {
-  width: 1em;
-  height: 1em;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .container {
   max-width: 48rem;
